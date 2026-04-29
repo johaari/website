@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #5c7a5c;
+  --bg: #f8f7f4;
+  --text: #1a1a1a;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+section {
+  padding: 5rem 1.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
