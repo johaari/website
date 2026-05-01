@@ -5,26 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elias</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="guestbook.js" defer></script>
+  <script src="whiteboard.js" defer></script>
+  <script src="feed.js" defer></script>
 </head>
 <body>
 
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-inner">
+      <img class="hero-image" src="portrait.png" alt="Photo">
+      <div class="hero-title">
+        <img src="world.gif" alt="" class="hero-globe">
+        <h1>welcome to my site</h1>
+        <img src="world.gif" alt="" class="hero-globe">
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
-  <section id="about"></section>
+  <section id="about">
+    <div class="about-col" id="about-links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="mailto:elias.truth112@passmail.com">Send E-mail</a></li>
+      </ul>
+    </div>
+    <div class="about-col" id="about-me">
+      <h2>About Me</h2>
+      <p>Hi my name is Elias (He/Him) and i am a 28 year old student from Copenhagen!
+        I have a background in front-end development, UX, 3D-modeling, and jewelry making. 
+        I'm currently studying Service System Design with a human-centered approach and a focus on care-centric and ethical design.</p>
+    </div>
+    <div class="about-col" id="about-feed">
+      <h2>Feed</h2>
+      <div id="feed-entries"></div>
+    </div>
+  </section>
 
-  <!-- Projects -->
-  <section id="projects"></section>
+  <!-- Whiteboard + Guestbook -->
+  <div id="panels-row">
 
-  <!-- Blog -->
-  <section id="blog"></section>
+    <section id="whiteboard">
+      <h2>Whiteboard</h2>
+      <div id="wb-canvas-wrap">
+        <canvas id="wb-canvas"></canvas>
+        <div id="wb-toolbar">
+          <input type="color" id="wb-color" value="#000000" title="Color">
+          <input type="range" id="wb-size" min="2" max="40" value="6" title="Brush size">
+          <button id="wb-eraser">Eraser</button>
+          <button id="wb-clear">Clear</button>
+        </div>
+        <div id="wb-save-row">
+          <input type="text" id="wb-name" placeholder="Your name" maxlength="40">
+          <button id="wb-save">Save painting</button>
+        </div>
+      </div>
+      <div id="wb-gallery"></div>
+    </section>
 
-  <!-- Guestbook -->
-  <section id="guestbook"></section>
+    <section id="guestbook">
+      <h2>Guestbook</h2>
+      <div id="guestbook-entries"></div>
+      <form id="guestbook-form">
+        <input type="text" id="gb-name" placeholder="Name" required>
+        <input type="email" id="gb-email" placeholder="Email (optional)">
+        <textarea id="gb-message" placeholder="Leave a message..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <!-- Whiteboard -->
-  <section id="whiteboard"></section>
-
-  <!-- Contact -->
-  <section id="contact"></section>
+  </div>
 
 </body>
 </html>
