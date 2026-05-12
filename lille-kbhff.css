@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;1,9..144,500&family=Inter:wght@400;500&family=Caveat:wght@600&display=swap');
+
+/* ── Design tokens ── */
+#portfolio-content {
+  --green-deep: #006830;
+  --mint-bg: #C5DDCD;
+  --cream-bg: #F8F8E0;
+  --paper-white: #FDFCF4;
+  --carrot: #FBAA1A;
+  --ink: #1A1A1A;
+  --ink-muted: #5A5A5A;
+  --line: #D8D4C0;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-hand: "Caveat", cursive;
+  --radius-card: 16px;
+
+  /* Stay black — matches navbar */
+  padding: 1.5rem;
+}
+
+/* Cream content sits inside the black frame */
+.cs-content {
+  background: var(--cream-bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+/* ── Back link ── */
+.cs-back {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-transform: none;
+}
+
+.cs-back:hover {
+  color: var(--green-deep);
+  text-decoration: underline;
+}
+
+/* ── Article base ── */
+.case-study {
+  font-family: var(--font-body);
+}
+
+/* ── Title & subtitle ── */
+.cs-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4vw + 1rem, 3.5rem);
+  font-weight: 800;
+  color: var(--green-deep);
+  text-transform: none;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.4rem;
+}
+
+.cs-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--ink-muted);
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+/* ── Meta ── */
+.cs-meta-item dt {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cs-meta-item dd {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+/* ── Tags ── */
+.cs-tag {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  color: var(--green-deep);
+  background: var(--mint-bg);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+}
+
+/* ── Divider ── */
+.cs-divider {
+  border-top-color: var(--line);
+}
+
+/* ── Section headings ── */
+.cs-h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 2vw + 1rem, 2.25rem);
+  font-weight: 700;
+  color: var(--green-deep);
+  text-transform: none;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.75rem;
+}
+
+.cs-h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1vw + 0.75rem, 1.5rem);
+  font-weight: 700;
+  color: var(--green-deep);
+  text-transform: none;
+}
+
+/* ── Body text ── */
+.cs-section p {
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  color: var(--ink);
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+.cs-section strong {
+  color: var(--green-deep);
+}
+
+/* ── List ── */
+.cs-list {
+  font-family: var(--font-body);
+}
+
+.cs-list li {
+  font-size: 1.0625rem;
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+/* ── Quote float ── */
+.cs-quote-float {
+  float: right;
+  width: 44%;
+  margin: 0 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cs-section-problem::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* ── Label (handwritten accent) ── */
+.cs-label {
+  font-family: var(--font-hand) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  color: var(--green-deep) !important;
+  text-transform: none !important;
+  margin-bottom: 0 !important;
+}
+
+/* ── Pull quote ── */
+.cs-quote {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--green-deep);
+  border: none;
+  border-left: 4px solid var(--green-deep);
+  background: var(--mint-bg);
+  padding: 1.25rem 1.5rem;
+  line-height: 1.6;
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+}
+
+/* ── Process background-image overlay ── */
+.cs-text-overlay {
+  background: rgba(248, 248, 224, 0.94);
+  border-radius: var(--radius-card);
+}
+
+.cs-text-overlay .cs-h2 {
+  color: var(--green-deep);
+}
+
+.cs-text-overlay p {
+  color: var(--ink);
+}
+
+.cs-text-overlay strong {
+  color: var(--green-deep);
+}

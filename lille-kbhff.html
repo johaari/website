@@ -6,6 +6,7 @@
   <title>Lille KBHFF — Elias</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="lille-kbhff.css">
 </head>
 <body>
 
@@ -31,14 +32,16 @@
 
   <!-- Case Study -->
   <section id="portfolio-content">
+    <div class="cs-content">
     <a href="portfolio.html" class="cs-back">← Back to Portfolio</a>
 
     <article class="case-study">
 
       <div class="cs-header">
-        <h1 class="cs-title">Lille KBHFF</h1>
-        <p class="cs-subtitle">Designing a family-oriented expansion of Copenhagen's food co-operative</p>
-        <dl class="cs-meta">
+        <div class="cs-header-content">
+          <h1 class="cs-title">Lille KBHFF</h1>
+          <p class="cs-subtitle">Designing a family-oriented expansion of Copenhagen's food co-operative</p>
+          <dl class="cs-meta">
           <div class="cs-meta-item">
             <dt>Client</dt>
             <dd>Københavns Fødevarefællesskab (KBHFF)</dd>
@@ -49,58 +52,70 @@
           </div>
           <div class="cs-meta-item">
             <dt>Methods</dt>
-            <dd>Co-creation workshops, semi-structured interviews, walk-a-mile, system mapping, storyboarding, pretotyping, prototyping, service blueprinting</dd>
+            <dd class="cs-tags">
+              <span class="cs-tag">Co-creation workshops</span>
+              <span class="cs-tag">Semi-structured interviews</span>
+              <span class="cs-tag">Walk-a-mile</span>
+              <span class="cs-tag">System mapping</span>
+              <span class="cs-tag">Storyboarding</span>
+              <span class="cs-tag">Pretotyping</span>
+              <span class="cs-tag">Prototyping</span>
+              <span class="cs-tag">Service blueprinting</span>
+              <span class="cs-tag">User journey</span>
+              <span class="cs-tag">Scenarios</span>
+            </dd>
           </div>
         </dl>
+        </div>
+        <img src="kbhff3.png" alt="Lille KBHFF" class="cs-header-image">
       </div>
 
       <hr class="cs-divider">
 
-      <section class="cs-section">
-        <h2 class="cs-h2">1. The Problem</h2>
+      <section class="cs-section cs-section-problem">
+        <h2 class="cs-h2">The Problem</h2>
         <p>KBHFF, Copenhagen's member-owned food co-operative, asked us to redesign their service to attract younger members and secure long-term engagement. Most current members are women over 30, and the co-op was concerned about its future pipeline.</p>
+        <div class="cs-quote-float">
+          <p class="cs-label">Reframed design challenge</p>
+          <blockquote class="cs-quote">How might we create meaningful, family-oriented ways to participate in KBHFF that both support parents and nurture the next generation's connection to its values?</blockquote>
+        </div>
         <p>Our research surfaced a sharper version of that problem. Young members weren't missing. They were leaving when they became parents, shifting from active volunteers to passive supporting members because the co-op had no role for their children. Recruiting more young members wouldn't help if the underlying retention issue stayed unsolved. The opportunity was to retain the parents already there and use them as the bridge to the next generation of KBHFF members.</p>
-        <p class="cs-label">Reframed design challenge</p>
-        <blockquote class="cs-quote">How might we create meaningful, family-oriented ways to participate in KBHFF that both support parents and nurture the next generation's connection to its values?</blockquote>
       </section>
 
       <hr class="cs-divider cs-divider-tight">
 
-      <section class="cs-section">
-        <h2 class="cs-h2">2. The Process</h2>
-        <img src="kbhff1.jpeg" alt="The Process" class="cs-image">
-        <p>We worked through the Double Diamond, renamed to reflect how we actually moved through it: Explore, Make Sense, Ideate &amp; Prototype, Deliver. In practice the phases overlapped constantly. Field exploration kept feeding Make Sense, and Make Sense kept sending us back to the field.</p>
-        <p>The thread that held the messiness together was the <strong>research wall</strong>.</p>
-        <p>The wall started as a place to cluster observations from open-ended interviews and field exploration, but it quickly became something more active. Every new interview, walk-a-mile note, service safari observation, or workshop output went up on it, and every time we added something, the existing clusters had to be reread. Themes that looked stable shifted, faded, or fractured. Insights that initially sat at the edge moved to the centre once a third or fourth data point landed nearby.</p>
-        <p>This iterative, multifaceted analysis was what surfaced the tacit knowledge sitting underneath the brief. The patterns we cared about were not the loud ones. Members rarely said "I drifted away when I had kids", but the wall made that pattern visible by holding fragments of it next to each other: a parent volunteering with a child in tow at one department, an interviewee mentioning she "stopped having time" after her first child, a coordinator noting that supporting members rarely come back to volunteer once they've stepped away. None of those observations meant much in isolation. Together on the wall, they pointed somewhere specific.</p>
-        <p>The wall is also what gave us the confidence to challenge the brief. KBHFF had asked us to attract young members. The wall was telling us that the deeper problem was retaining young parents already inside the organisation. Reframing the brief was not an intuition. It was a conclusion the data made hard to avoid once we had laid it out properly.</p>
-        <p>From there, the wall became the reference point for everything that followed. The "How Might We" questions were drawn directly from clusters on the wall. The decision to pursue families over internationals or schools was checked against it. When prototype testing surfaced new findings, those went up too, and existing clusters were reread again.</p>
-        <p>The methods that fed the wall mattered, but the wall is what made them add up. Service safari across five departments, eleven open-ended interviews, a walk-a-mile immersion, semi-structured interviews paired deep-and-broad, an online facilitation workshop, and a competitor analysis all produced raw material. The wall is where that raw material became insight.</p>
+      <section class="cs-section cs-section-bg" style="background-image: url(kbhff1.jpeg);">
+        <div class="cs-text-overlay">
+          <h2 class="cs-h2">The Process</h2>
+          <p>We worked through the Double Diamond, renamed to reflect how we actually moved through it: Explore, Make Sense, Ideate &amp; Prototype, Deliver. In practice the phases overlapped constantly. Field exploration kept feeding Make Sense, and Make Sense kept sending us back to the field.</p>
+          <p>The thread that held the messiness together was the <strong>research wall</strong>.</p>
+          <p>The wall started as a place to cluster observations from open-ended interviews and field exploration, but it quickly became something more active. Every new interview, walk-a-mile note, service safari observation, or workshop output went up on it, and every time we added something, the existing clusters had to be reread. Themes that looked stable shifted, faded, or fractured. Insights that initially sat at the edge moved to the centre once a third or fourth data point landed nearby.</p>
+          <p>This iterative, multifaceted analysis was what surfaced the tacit knowledge sitting underneath the brief. The patterns we cared about were not the loud ones. Members rarely said "I drifted away when I had kids", but the wall made that pattern visible by holding fragments of it next to each other: a parent volunteering with a child in tow at one department, an interviewee mentioning she "stopped having time" after her first child, a coordinator noting that supporting members rarely come back to volunteer once they've stepped away. None of those observations meant much in isolation. Together on the wall, they pointed somewhere specific.</p>
+          <p>The wall is also what gave us the confidence to challenge the brief. KBHFF had asked us to attract young members. The wall was telling us that the deeper problem was retaining young parents already inside the organisation. Reframing the brief was not an intuition. It was a conclusion the data made hard to avoid once we had laid it out properly.</p>
+          <p>From there, the wall became the reference point for everything that followed. The "How Might We" questions were drawn directly from clusters on the wall. The decision to pursue families over internationals or schools was checked against it. When prototype testing surfaced new findings, those went up too, and existing clusters were reread again.</p>
+          <p>The methods that fed the wall mattered, but the wall is what made them add up. Service safari across five departments, eleven open-ended interviews, a walk-a-mile immersion, semi-structured interviews paired deep-and-broad, an online facilitation workshop, and a competitor analysis all produced raw material. The wall is where that raw material became insight.</p>
+        </div>
       </section>
 
       <hr class="cs-divider cs-divider-tight">
 
-      <section class="cs-section">
-        <h2 class="cs-h2">3. The Outcome</h2>
-        <p><strong>Lille KBHFF</strong>: an extension of the existing service that lets families participate meaningfully without disrupting how the co-op already runs.</p>
-        <p>The service has three integrated elements:</p>
-        <ul class="cs-list">
-          <li><strong>The children's bag</strong>, a smaller, child-friendly bag of seasonal produce that children pick up themselves at their family's KBHFF department, giving them ownership over their own food</li>
-          <li><strong>Weekly creative materials</strong>, including recipes designed for children to cook with their parents, plus rotating creative prompts that connect the produce to play</li>
-          <li><strong>Seasonal storytelling</strong>, a comic and storybook produced once per season that introduces KBHFF's values (local, organic, seasonal eating) through narrative</li>
-        </ul>
-        <p>A new volunteer group, the <strong>children's bag group</strong>, produces the materials one season ahead of time, working asynchronously within KBHFF's existing three-hour-monthly shift structure. This deliberately creates a more flexible volunteering pathway, addressing a separate insight from our research: KBHFF's existing volunteering model is largely Wednesday-bound, and that rigidity is part of why parents drop off.</p>
-        <img src="kbhff2.jpeg" alt="The Outcome" class="cs-image cs-image-sm">
-        <h3 class="cs-h3">Why it works</h3>
-        <ul class="cs-list">
-          <li><strong>Built on the existing system, not parallel to it.</strong> Lille KBHFF reuses KBHFF's ordering platform, distribution flow, and pick-up touchpoints, so the implementation cost is low and member routines aren't disrupted.</li>
-          <li><strong>Aligned with KBHFF's values.</strong> The service amplifies the emotional connection to produce that our research showed members already feel, and extends it to the next generation.</li>
-          <li><strong>Tackles retention, not just acquisition.</strong> It re-engages parents who had drifted into passive membership and gives their children a reason to grow up inside the co-op rather than around it.</li>
-          <li><strong>Validated, not assumed.</strong> Initial interest among parents is positive, early engagement among children is promising, and the backend was validated as feasible by KBHFF's coordinator.</li>
-        </ul>
+      <section class="cs-section cs-section-row">
+        <img src="kbhff2.jpeg" alt="The Outcome" class="cs-outcome-image">
+        <div class="cs-outcome-text">
+          <h2 class="cs-h2">The Outcome</h2>
+          <p><strong>Lille KBHFF</strong>: an extension of the existing service that lets families participate meaningfully without disrupting how the co-op already runs.</p>
+          <p>The service has three integrated elements:</p>
+          <ul class="cs-list">
+            <li><strong>The children's bag</strong>, a smaller, child-friendly bag of seasonal produce that children pick up themselves at their family's KBHFF department, giving them ownership over their own food</li>
+            <li><strong>Weekly creative materials</strong>, including recipes designed for children to cook with their parents, plus rotating creative prompts that connect the produce to play</li>
+            <li><strong>Seasonal storytelling</strong>, a comic and storybook produced once per season that introduces KBHFF's values (local, organic, seasonal eating) through narrative</li>
+          </ul>
+          <p>A new volunteer group, the <strong>children's bag group</strong>, produces the materials one season ahead of time, working asynchronously within KBHFF's existing three-hour-monthly shift structure. This deliberately creates a more flexible volunteering pathway, addressing a separate insight from our research: KBHFF's existing volunteering model is largely Wednesday-bound, and that rigidity is part of why parents drop off.</p>
+        </div>
       </section>
 
     </article>
+    </div>
   </section>
 
   <div style="padding-bottom: 2rem;"></div>
